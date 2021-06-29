@@ -1,6 +1,16 @@
 body {
   background-color: #f5f5ef;
+  font-family: "Belleza", sans-serif;
 }
+
+hr {
+  border-color: rgb(37, 49, 64);
+  border-width: 1px;
+  border-style: solid;
+  width: 500px;
+}
+
+/* Navbar section */
 .navbar-logo {
   display: flex;
   align-content: center;
@@ -32,6 +42,8 @@ body {
   cursor: pointer;
 }
 
+/* Carousel section */
+
 .carousel {
   display: flex;
   justify-content: center;
@@ -41,12 +53,14 @@ body {
 }
 .carousel-img-container {
   display: flex;
+  width: auto;
   transform: translateX(0);
   transition: transform 0.25s;
 }
 
 .carousel-img {
   height: 600px;
+  width: auto;
 }
 
 .carousel-btn {
@@ -59,7 +73,7 @@ body {
   font-weight: bold;
   height: 3rem;
   opacity: 0.5;
-  position: absolute;
+  position: sticky;
   transition: opacity 0.25s;
   width: 3rem;
   z-index: 1;
@@ -77,4 +91,133 @@ body {
 .nxt {
   right: 230px;
   top: 280px;
+}
+
+/* Services section */
+
+.services-header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.services-card-div {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.services-card {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border: 1px solid rgb(37, 49, 64);
+  border-radius: 5%;
+  width: fit-content;
+  padding: 10px;
+  width: 200px;
+  height: 250px;
+  margin: 40px;
+  display: inline-block;
+  transition: transform 0.25s;
+}
+
+.services-card:hover {
+  transform: scale(1.05);
+}
+
+.services-card-image {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.services-card-text {
+  font-size: 2rem;
+}
+
+/* Packages section */
+
+.packages-header {
+  text-align: center;
+}
+
+.packages-sub {
+  font-size: 1.5rem;
+}
+
+.packages-card-section {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.packages-card {
+  text-align: center;
+  border: 1px solid rgb(37, 49, 64);
+  border-radius: 10px;
+  padding-top: 0px;
+  width: 250px;
+  margin: 40px;
+  display: inline-block;
+  transition: transform 0.25s;
+}
+
+.packages-card:hover {
+  transform: scale(1.05);
+}
+
+.packages-card-header {
+  margin-top: 0px;
+  padding-top: 1px;
+  padding-bottom: 3px;
+  background-color: rgb(37, 49, 64);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.pop {
+  background-color: rgb(0, 196, 33);
+}
+
+.header-title {
+  color: #f5f5ef;
+  padding: 5px;
+}
+.header-sub {
+  color: #f5f5ef;
+  padding: 4px;
+}
+
+.packages-card-body {
+  padding: 5px;
+  padding-bottom: 20px;
+}
+
+.enq-btn {
+  all: unset;
+  background-color: rgb(37, 49, 64);
+  color: #f5f5ef;
+  border-radius: 5%;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.enq-btn:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.enq-btn-pop {
+  all: unset;
+  background-color: rgb(0, 196, 33);
+  color: #f5f5ef;
+  border-radius: 5%;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.enq-btn-pop:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.packages-item {
+  padding: 10px;
+  font-size: 1.2rem;
 }
