@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Belleza", sans-serif;
 }
@@ -7,6 +11,12 @@ hr {
   border-top-width: 1px;
   border-style: solid;
   width: 500px;
+}
+
+form{
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Navbar section */
@@ -244,6 +254,11 @@ hr {
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s;
+}
+
+.testi-card:hover{
+  transform: scale(1.02);
 }
 
 .testi-comma {
@@ -262,4 +277,59 @@ hr {
 
 .testi-text {
   font-size: 1.1rem;
+}
+
+/* contact us section  */
+
+.contact-form{
+  background-color: #f5f5ef;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.form-input{
+  all: unset;
+  display: block;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  height: 30px;
+  width: 300px;
+  padding: 3px;
+
+}
+.msg{
+  height: 90px;
+}
+
+.form-submit{
+  all: unset;
+  background-color: rgb(37, 49, 64);
+  color: #f5f5ef;
+  border-radius: 5%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+form-submit:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+/* footer section  */
+.footer{
+  background-color: rgb(37, 49, 64);
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-text{
+  color: #f5f5ef;
 }
