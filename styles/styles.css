@@ -1,11 +1,10 @@
 body {
-  background-color: #f5f5ef;
   font-family: "Belleza", sans-serif;
 }
 
 hr {
   border-color: rgb(37, 49, 64);
-  border-width: 1px;
+  border-top-width: 1px;
   border-style: solid;
   width: 500px;
 }
@@ -107,10 +106,10 @@ hr {
 }
 
 .services-card {
+  background-color: #f5f5ef;
   justify-content: center;
   align-content: center;
   text-align: center;
-  border: 1px solid rgb(37, 49, 64);
   border-radius: 5%;
   width: fit-content;
   padding: 10px;
@@ -119,6 +118,7 @@ hr {
   margin: 40px;
   display: inline-block;
   transition: transform 0.25s;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .services-card:hover {
@@ -150,14 +150,15 @@ hr {
   text-align: center;
 }
 .packages-card {
+  background-color: #f5f5ef;
   text-align: center;
-  border: 1px solid rgb(37, 49, 64);
   border-radius: 10px;
   padding-top: 0px;
   width: 250px;
   margin: 40px;
   display: inline-block;
   transition: transform 0.25s;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .packages-card:hover {
@@ -220,4 +221,45 @@ hr {
 .packages-item {
   padding: 10px;
   font-size: 1.2rem;
+}
+
+/* Testimonial section */
+
+.testi-div {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.testi-header {
+  font-size: 2rem;
+}
+
+.testi-card {
+  background-color: #f5f5ef;
+  text-align: center;
+  width: 250px;
+  margin: 40px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.testi-comma {
+  display: flex;
+  position: relative;
+  left: 2px;
+  top: 2px;
+}
+
+.testi-img {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.testi-text {
+  font-size: 1.1rem;
 }
