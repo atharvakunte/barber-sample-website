@@ -318,7 +318,7 @@ form{
   font-size: 1rem;
 }
 
-form-submit:hover{
+.form-submit:hover{
   cursor: pointer;
   transform: scale(1.02);
 }
